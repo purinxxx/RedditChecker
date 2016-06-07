@@ -1,0 +1,97 @@
+.tooltip {
+  position: absolute;
+  z-index: 1;
+  padding: 5px;
+  background: rgba(0, 0, 0, 0.3);
+  opacity: 1;
+  border-radius: 3px;
+  text-align: center;
+  pointer-events: none;
+  color: white;
+  transition: opacity .1s ease-out;
+}
+
+.tooltip.tooltip-hidden {
+  opacity: 0;
+}
+
+.ct-chart {
+  position: relative;
+}
+
+.ct-chart .ct-label.ct-horizontal,
+.ct-chart .ct-label.ct-vertical {
+  color: rgba(0, 0, 0, 0.3);
+}
+.ct-chart .ct-grid.ct-horizontal,
+.ct-chart .ct-grid.ct-vertical {
+  shape-rendering: crispEdges;
+  stroke-width: 1px;
+  stroke-dasharray: 1px 4px;
+  stroke: rgba(0, 0, 0, 0.2);
+}
+
+.ct-chart .ct-point {
+  stroke-width: 16px;
+}
+
+.ct-chart .ct-line {
+  stroke-width: 3px;
+}
+
+.ct-chart.ct-blured .ct-point,
+.ct-chart.ct-blured .ct-line {
+  stroke-opacity: 0.2;
+}
+html,body {
+	margin: 0;
+	color: #444;
+	line-height: 1;
+	font-weight: lighter;
+}
+form {
+	padding-left: 15%;
+	padding-right: 15%;
+}
+button {
+	background-color: #E96F71 !important;
+	float: right;
+}
+table tbody tr td {
+	padding-left: 10%;
+	border-bottom: 1px solid #e6e7ea;
+}
+.small {
+	font-size: 0.7rem;
+}
+table {
+	max-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	clear: right;
+	margin-top: -1rem;
+}
+h1 a {
+	color: #E96F71 !important;
+	font-size: 3rem !important;
+	font-weight: lighter !important;
+	margin-left: 5%;
+}
+@media (min-width: 500px) {
+  table {
+	max-width: 22%;
+	float: left;
+	margin-left: 3%;
+  }
+  table tbody tr td {
+	padding-left: 5%;
+  }
+  .ct-chart {
+	position: absolute;
+  }
+  #box {
+    width: 70%;
+	margin-left: 28%;
+	margin-bottom: 3%;
+  }
+}
